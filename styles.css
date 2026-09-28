@@ -95,3 +95,8 @@ h2 { margin: 0; font-size: clamp(42px, 5vw, 76px); line-height: 1.03; letter-spa
 }
 
 @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } .button-link { transition: none; } }
+@media (max-width: 600px) {
+  #wordmark-symbol {
+    height: 30px;
+  }
+}
