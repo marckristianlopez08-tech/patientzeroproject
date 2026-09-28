@@ -19,7 +19,7 @@ a:focus-visible { outline: 2px solid var(--black); outline-offset: 5px; }
 
 .site-header { min-height: 104px; display: flex; justify-content: space-between; align-items: center; padding: 22px clamp(24px, 6.2vw, 100px); border-bottom: 1px solid var(--line); }
 .wordmark { display: inline-flex; align-items: center; gap: 13px; font-weight: 900; font-size: 16px; line-height: .88; letter-spacing: -.075em; text-decoration: none; }
-.wordmark-symbol { display: block; width: 38px; height: 38px; border: 7px solid var(--black); border-radius: 50%; }
+#wordmark-symbol{ height: 50px; }
 .wordmark-period, .footer-name span { color: #8b8b8b; }
 .header-right { display: flex; align-items: center; gap: clamp(25px, 5vw, 86px); font-size: 13px; }
 .header-affiliation { color: var(--muted); }
@@ -54,7 +54,7 @@ h2 { margin: 0; font-size: clamp(42px, 5vw, 76px); line-height: 1.03; letter-spa
 .event { padding-bottom: 120px; }
 .event-content { display: grid; grid-template-columns: 1fr minmax(230px, .7fr); gap: clamp(30px, 7vw, 120px); }
 .event-content p { max-width: 490px; font-size: 20px; line-height: 1.5; margin: 28px 0 34px; }
-.button-link { display: inline-flex; justify-content: space-between; gap: 36px; padding: 16px 18px; min-width: 185px; background: var(--black); color: var(--white); font-size: 14px; font-weight: bold; text-decoration: none; transition: background .2s ease; }
+.button-link { display: inline-flex; justify-content: space-between; gap: 36px; align-items: center; padding: 16px 18px; min-width: 185px; background: var(--black); color: var(--white); font-size: 14px; font-weight: bold; text-decoration: none; transition: background .2s ease; }
 .button-link:hover { background: #404040; }
 .button-link:focus-visible { outline-color: var(--black); }
 .event-details { border-top: 1px solid var(--black); }
