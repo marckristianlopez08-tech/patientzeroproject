@@ -80,7 +80,7 @@ h2 { margin: 0; font-size: clamp(42px, 5vw, 76px); line-height: 1.03; letter-spa
   .site-header { min-height: 82px; }
   .header-affiliation, .hero-topline span:last-child { display: none; }
   .wordmark { font-size: 14px; }
-  .wordmark-symbol { width: 32px; height: 32px; border-width: 6px; }
+  #wordmark-symbol { width: 32px; height: 32px; border-width: 6px; }
   .hero { min-height: min(700px, calc(100svh - 82px)); padding-top: 25px; padding-bottom: 42px; }
   .hero h1 { font-size: clamp(45px, 12.5vw, 86px); margin: 55px 0 50px; }
   .hero-bottom { display: block; }
@@ -95,8 +95,3 @@ h2 { margin: 0; font-size: clamp(42px, 5vw, 76px); line-height: 1.03; letter-spa
 }
 
 @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } .button-link { transition: none; } }
-@media (max-width: 600px) {
-  #wordmark-symbol {
-    height: 30px;
-  }
-}
