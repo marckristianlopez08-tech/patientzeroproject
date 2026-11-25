@@ -8,37 +8,73 @@
     <title>Patient Zero Project | University of Toronto</title>
     <link rel="icon" type="image/png" href="images/patientzeroproject_transparentbg.png" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="site.js" defer></script>
   </head>
-  <body>
+  <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Patient Zero Project, back to top">
-        <span aria-hidden="true"><img src="images/patientzeroproject_transparentbg.png" id="wordmark-symbol"></span>
+    <header class="site-header page-wrap">
+      <a class="wordmark" href="./index.html" aria-label="Patient Zero Project home">
+        <img src="images/patientzeroproject_transparentbg.png" alt="" width="44" height="44" />
         <span>PATIENT<br />ZERO<span class="wordmark-period">.</span></span>
       </a>
-      <div class="header-right">
-        <span class="header-affiliation">A student initiative at U of T</span>
+      <nav class="header-right" aria-label="Main navigation">
+        <a href="./index.html#about">About</a>
+        <a href="./gallery.html">Event photos</a>
         <a class="header-link" href="https://www.instagram.com/patientzero.uoft/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-      </div>
+      </nav>
     </header>
 
     <main id="main">
-      <section class="hero page-wrap" id="top" aria-labelledby="hero-title">
-        <div class="hero-topline">
-          <span>THE PATIENT ZERO PROJECT</span>
-          <span>TORONTO, CANADA &nbsp;·&nbsp; UNIVERSITY OF TORONTO</span>
+      <section class="hero page-wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="short-rule" aria-hidden="true"></span>The Patient Zero Project at U of T</p>
+          <h1 id="hero-title">Beyond the<br /><em>lecture hall.</em></h1>
+          <p class="hero-intro">Bringing healthcare knowledge to life through hands-on learning, real clinical questions, and the people who work in medicine.</p>
+          <div class="hero-actions">
+            <a class="button-link" href="#first-event">See our first event</a>
+            <a class="text-link" href="#about">Get to know us</a>
+          </div>
         </div>
-        <h1 id="hero-title">Beyond the<br /><em>lecture hall.</em></h1>
-        <div class="hero-bottom">
-          <p>Bringing healthcare knowledge to life through hands-on learning, real clinical questions, and the people who work in medicine.</p>
-          <a class="text-link" href="#about">Get to know us <span aria-hidden="true">↗</span></a>
+        <figure class="hero-photo">
+          <div class="photo-frame"><img src="images/first-event/thumbs/dsc05671.webp" srcset="images/first-event/thumbs/dsc05671.webp 640w, images/first-event/dsc05671.webp 1600w" sizes="(max-width: 760px) 90vw, 45vw" width="1600" height="900" alt="A student smiling during a conversation near the front of the room." fetchpriority="high" /></div>
+          <figcaption><span>Our first event</span><time datetime="2026-09-30">September 30, 2026</time></figcaption>
+        </figure>
+      </section>
+
+      <section class="event page-wrap" id="first-event" aria-labelledby="event-title">
+        <div class="event-heading" data-reveal>
+          <div>
+            <p class="eyebrow">Event recap</p>
+            <h2 id="event-title">Our first event.</h2>
+            <p class="event-intro">Students gathered in MS RM3153 for opening remarks, then got to know each other in small groups around the lecture hall.</p>
+          </div>
+          <a class="button-link" href="./gallery.html">View all 48 photos</a>
         </div>
-        <span class="hero-index" aria-hidden="true">01 / 03</span>
+        <div class="highlights" data-reveal>
+          <a class="highlight" href="./gallery.html#photo-05476">
+            <figure>
+              <div class="photo-frame"><img src="images/first-event/thumbs/dsc05476.webp" width="640" height="360" alt="Two presenters addressing the room beside the lectern." loading="lazy" decoding="async" /></div>
+              <figcaption>Opening remarks</figcaption>
+            </figure>
+          </a>
+          <a class="highlight" href="./gallery.html#photo-05488">
+            <figure>
+              <div class="photo-frame"><img src="images/first-event/thumbs/dsc05488.webp" width="640" height="360" alt="Two students in novelty glasses posing for a phone photo." loading="lazy" decoding="async" /></div>
+              <figcaption>Between conversations</figcaption>
+            </figure>
+          </a>
+          <a class="highlight" href="./gallery.html#photo-05672">
+            <figure>
+              <div class="photo-frame"><img src="images/first-event/thumbs/dsc05672.webp" width="640" height="360" alt="Ten attendees posing together in front of the classroom blackboard." loading="lazy" decoding="async" /></div>
+              <figcaption>The group photo</figcaption>
+            </figure>
+          </a>
+        </div>
       </section>
 
       <section class="intro page-wrap" id="about" aria-labelledby="about-title">
-        <div class="section-label"><span>01</span><span>WHO WE ARE</span></div>
-        <div class="intro-content">
+        <div class="section-label">WHO WE ARE</div>
+        <div class="intro-content" data-reveal>
           <h2 id="about-title">Where curiosity meets practice.</h2>
           <p>Patient Zero is a student collective at the University of Toronto’s St. George campus. We create a space to explore the practical, diagnostic, and ethical sides of healthcare together.</p>
           <p>Through interactive experiences, we connect students with clinicians, researchers, faculty, and each other.</p>
@@ -46,8 +82,8 @@
       </section>
 
       <section class="offerings page-wrap" id="what-we-do" aria-labelledby="offerings-title">
-        <div class="section-label"><span>02</span><span>WHAT WE DO</span></div>
-        <div class="offerings-content">
+        <div class="section-label">WHAT WE DO</div>
+        <div class="offerings-content" data-reveal>
           <h2 id="offerings-title">Learn it. Try it. Talk about it.</h2>
           <div class="offering-list">
             <div class="offering"><span class="offering-number">01</span><h3>Hands-on workshops</h3><p>Explore clinical and surgical skills through practice.</p></div>
@@ -57,21 +93,6 @@
         </div>
       </section>
 
-      <section class="event page-wrap" aria-labelledby="event-title">
-        <div class="section-label"><span>03</span><span>UP NEXT</span></div>
-        <div class="event-content">
-          <div>
-            <h2 id="event-title">Our first event.</h2>
-            <p>Come see where Patient Zero begins. Follow us on Instagram for event updates and what’s next.</p>
-            <a class="button-link" href="https://www.instagram.com/patientzero.uoft/" target="_blank" rel="noopener noreferrer">Follow along <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="event-details" aria-label="First event details">
-            <div><span>DATE</span><strong>September 30</strong></div>
-            <div><span>TIME</span><strong>5:00–6:30 pm</strong></div>
-            <div><span>ROOM</span><strong>MS RM3153</strong></div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer page-wrap">
